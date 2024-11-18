@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Lift Hub</title>
+    <link rel="stylesheet" href="question.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="header"> 
+        <div class="progress-bar-container">
+            <div class="progress-bar"></div>
+        </div>
+        <div class="text">Pessoas que já se cadastraram: XXXX</div>
+    </div>
+    <div class="box">
+        <form action="">
+                <legend><b>Cadastro</b></legend>
+                <br>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelInput">Nome completo</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="email" id="email" class="inputUser" required>
+                    <label for="email" class="labelInput">Email</label>
+                </div>
+                <p>Genêro:</p>
+                <input type="radio" id="masculino" name="genero" value="1" required>
+                <label for="masculino">Masculino</label>
+                <br>
+                <input type="radio" id="feminino" name="genero" value="2" required>
+                <label for="feminino">Feminino</label>
+                <br>
+                <input type="radio" id="outro" name="genero" value="3" required>
+                <label for="outro">Outro</label>
+                <p>PCD (Pessoa Com Deficiência):</p>
+                <input type="radio" id="s-pcd" name="pcd" value="1" required>
+                <label for="s-pcd">Sim</label>
+                <br>
+                <input type="radio" id="n-pcd" name="pcd" value="0" required>
+                <label for="n-pcd">Não</label>
+                <br><br>
+                <label for="data_nascimento">Data de Nascimento:</label>
+                <input type="date" name="data_nascimento" id="data_nascimento" required>
+                <br><br><br>
+                <div class="inputBox">
+                    Estado:
+                    <select name="estado" id="estado">
+                        <option value="sc">SC</option>
+                    </select>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    Cidade:
+                    <select name="cidade" id="cidade">
+                        <option value="1">Florianópolis</option>
+                        <option value="2">São José</option>
+                        <option value="3">Palhoça</option>
+                        <option value="4">Outros</option>
+                    </select>
+                </div>
+                <br><br>
+                <fieldset>
+                    <legend class="cref"><b>CREF:</b></legend>
+                    <br>
+                    <div class="inputBox">
+                        <input type="number" min="0" max="99999" name="nrp" id="nrp" class="inputUser" required>
+                        <label for="nrp" class="labelInput">Número de registro do profissional</label>
+                    </div>
+                    <br><br>
+                    <div class="inputBox">
+                        <input type="text" maxlength="1" name="categoria" id="categoria" class="inputUser" required>
+                        <label for="categoria" class="labelInput">Categoria de atuação</label>
+                    </div>
+                    <br><br>
+                    <div class="inputBox">
+                        <input type="text" name="loc-registro" id="loc-registro" class="inputUser" required>
+                        <label for="loc-registro" class="labelInput">Estado de registro</label>
+                    </div>
+                </fieldset>
+                    <br>
+                    <p>Possui experiência?</p>
+                    <input type="radio" id="c-xp" name="experiencia" value="1" required>
+                    <label for="c-xp">Sim</label>
+                    <br>
+                    <input type="radio" id="s-xp" name="experiencia" value="0" required>
+                    <label for="s-xp">Não</label>
+                    <br><br><br>
+                <fieldset>
+                    <br>
+                    <div class="inputBox">
+                        <textarea type="text" maxlength="1500" name="experiencia" id="experiencia" rows="5" cols="30" class="inputUser" oninput="updateCharacterCount()" required></textarea>
+                        <label for="experiencia" class="labelInput">Descreva sua experiência (em até 1500 caracteres):</label>
+                        <p class="remaining" id="remaining">Restam 1500 caracteres.</p>
+                    </div>
+                </fieldset>
+                <br><br><br>
+                <input type="submit" name="submit" id="submitBtn" onclick="window.location.href='end.html';">
+            </form>
+    </div>
+</body>
+</html>

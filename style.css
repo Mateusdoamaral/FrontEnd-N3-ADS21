@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #24293E;
+    color: #d3d3d3;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px;
+    background-color: #2f3443;
+    color: #d3d3d3;
+}
+.progress-bar-container { /* Barra de progresso geral*/
+    flex-grow: 1;
+    margin-right: 20px;
+    background-color: #1a1e28;
+    border-radius: 5px;
+    height: 8px;
+}
+.progress-bar {
+    height: 100%;
+    width: 50%; /* quantidade de progresso da barra */
+    background-color: #1a1e28; /* cor do progresso */
+    border-radius: 5px;
+}
+.text {
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    gap: 20px;
+}
+
+.box {
+    color: white;
+}
+
+.box button {
+    background-color:  #8E8BFF;
+    height: 50px;
+    width: 180px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    color: white;
+}
+
+.box button:hover {
+    background-color: #2f3443;
+}
